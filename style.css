@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Caveat:wght@400;700&family=Charmonman:wght@400;700&family=Dancing+Script:wght@400;700&family=Lemonada&family=Montserrat:wght@100;400;700&family=Roboto+Mono:wght@100;400;700&family=Sacramento&family=Satisfy&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Montserrat", sans-serif;
+	cursor: none;
+}
+nav {
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+	margin: auto;
+	min-height: 10vh;
+	align-items: center;
+}
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+.nav-links li {
+	font-weight: bold;
+	padding: 16px;
+}
+.nav-links,
+h1 {
+	flex: 1;
+}
+.cursor {
+	width: 50px;
+	height: 50px;
+	border: 2px solid #000000;
+	border-radius: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	transition: all 0.2s ease-in-out;
+	transition-property: background, transform;
+	transform-origin: 100% 100%;
+	z-index: -1;
+	backdrop-filter: blur(3px);
+}
+.scale {
+	background-color: #000000;
+	transform: scale(2);
+}
+.hover-link {
+	color: #f6f6f6;
+}
+.front-cover img {
+	position: relative;
+	z-index: -3;
+}
